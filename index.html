@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/paw-print2.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Poppins&display=swap"rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>iPet</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pet</h1>
+        <img class="logo" src="./img/bone_copy.png" alt="logo">
+    </header>
+
+    <main>
+        <div class="container">
+            <p>Tenha sempre a comida dos seus pets disponível!</p>
+
+            <!-- Início do Formulário -->
+            <form action="#" method="post">
+
+                <!-- Seção de Dados Pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </fieldset>
+
+                <!-- Seção de Endereço -->
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="rua">Rua</label>
+                    <input type="text" name="rua" id="rua">
+
+                    <label for="numero">Número</label>
+                    <input type="text" name="numero" id="numero">
+
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" id="complemento">
+
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="">Selecione</option>
+                        <option value="ac">AC</option>
+                        <option value="al">AL</option>
+                        <option value="ap">AP</option>
+                        <option value="am">AM</option>
+                        <option value="ba">BA</option>
+                        <option value="ce">CE</option>
+                        <option value="df">DF</option>
+                        <option value="es">ES</option>
+                        <option value="go">GO</option>
+                        <option value="ma">MA</option>
+                        <option value="mt">MT</option>
+                        <option value="ms">MS</option>
+                        <option value="mg">MG</option>
+                        <option value="pa">PA</option>
+                        <option value="pb">PB</option>
+                        <option value="pr">PR</option>
+                        <option value="pe">PE</option>
+                        <option value="pi">PI</option>
+                        <option value="rj">RJ</option>
+                        <option value="rn">RN</option>
+                        <option value="rs">RS</option>
+                        <option value="ro">RO</option>
+                        <option value="rr">RR</option>
+                        <option value="sc">SC</option>
+                        <option value="sp">SP</option>
+                        <option value="se">SE</option>
+                        <option value="to">TO</option>
+                    </select>
+
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep">
+                </fieldset>
+
+                <!-- Seção de Ração -->
+                <fieldset>
+                    <legend>Ração</legend>
+                    <label for="racao">Ração</label>
+                    <select name="racao" id="racao">
+                        <option value="">Selecione</option>
+                        <optgroup label="Cachorros">
+                            <option value="goldenAdultos">PremieR Pet Golden Special Adultos</option>
+                            <option value="goldenFilhotes">Premier Golden Formula Filhotes</option>
+                            <option value="goldenSenior">Premier Golden Formula Sênior</option>
+                            <option value="guabi">Guabi Natural Grain Free</option>
+                            <option value="ned">Farmina N&D Pumpkin Adultos</option>
+                            <option value="granplus">Affinity PetCare GranPlus Choice Adultos</option>
+                            <option value="royalcanin">Royal Canin Adultos</option>
+                            <option value="pedigree">Pedigree Equilíbrio Natural Adultos</option>
+                        </optgroup>
+                        <optgroup label="Gatos">
+                            <option value="goldenAdultos">PremieR Pet Golden Adultos Castrados</option>
+                            <option value="goldenFilhotes">PremieR Pet Golden Seleção Natural Filhotes</option>
+                            <option value="granplus">Affinity PetCare GranPlus Adultos Castrados</option>
+                            <option value="guabi">Affinity Guabi Natural Adultos</option>
+                            <option value="royalCanin">Royal Canin Adultos Castrados</option>
+                            <option value="ned">Farmina N&D Adultos</option>
+                            <option value="biofresh">Hercosul Biofresh Castrados</option>
+                            <option value="friskies">Nestlé Purina Friskies Adultos</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="periodicidade">Frequência de Recebimento</label>
+                    <select name="periodicidade" id="periodicidade">
+                        <option value="">Selecione</option>
+                        <option value="op1">A cada 1 mês</option>
+                        <option value="op2">A cada 2 meses</option>
+                        <option value="op3">A cada 3 meses</option>
+                        <option value="op4">A cada 4 meses</option>
+                        <option value="op5">A cada 5 meses</option>
+                    </select>
+                    <label for="datainicial">Data de Início</label>
+                    <input type="date" name="data" id="data">
+                </fieldset>
+
+                <!-- Seção de Pagamento -->
+                <fieldset>
+                    <legend>Método de Pagamento</legend>
+                    <input type="radio" name="pagamento" id="dinheiro">
+                    <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" name="pagamento" id="debito">
+                    <label for="debito">Débito</label>
+                    <input type="radio" name="pagamento" id="credito">
+                    <label for="credito">Crédito</label>
+                    <input type="radio" name="pagamento" id="pix" checked>
+                    <label for="pix">Pix</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="salvar" id="salvar">
+                    <label class="salvar" for="salvar">Salvar minhas informações</label>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
